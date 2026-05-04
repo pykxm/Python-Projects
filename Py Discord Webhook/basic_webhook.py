@@ -1,5 +1,4 @@
 # Basic Discord Webhook Sender 
-
 import requests
 
 Webhook_URL = ""
