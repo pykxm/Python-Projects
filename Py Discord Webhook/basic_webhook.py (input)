@@ -1,0 +1,16 @@
+# Basic Webhook Sender with Message Input
+import requests
+
+Webhook_URL = ""
+Message = input("What is your message?: ")
+username = ""
+
+data = {
+  "content": Message,
+  "username": username
+}
+
+response = requests.post(Webhook_URL, json=data)
+
+print("Message sent:", Message)
+print("Status:", response.status_code
